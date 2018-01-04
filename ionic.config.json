@@ -1,0 +1,8 @@
+{
+  "name": "officers",
+  "app_id": "fa573040",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
