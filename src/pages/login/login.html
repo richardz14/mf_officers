@@ -18,11 +18,17 @@
     <div class="wrapper">
 	<div class="container">
 		<h1>BARILLA</h1>
-		
-		<form class="form">
+    
+    <form class="form" (ngSubmit)="logForm()">
+        <input type="text" [(ngModel)]="loginData.username" name="username" placeholder="Username">
+        <input type="password" [(ngModel)]="loginData.passsword" name="passsword" placeholder="Password">
+ 
+      <button ion-button type="submit" id="login-button" >Login</button>
+      <!--
 			<input type="text" placeholder="Username">
 			<input type="password" placeholder="Password">
-			<button type="submit" id="login-button">Login</button>
+      <button type="submit" id="login-button">Login</button>
+      -->
 		</form>
   </div>
   <ul class="bg-bubbles">
