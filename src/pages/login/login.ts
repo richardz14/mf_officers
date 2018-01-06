@@ -1,9 +1,12 @@
 import { Component,OnInit } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Platform } from 'ionic-angular';
+import { Http, Headers, RequestOptions } from '@angular/http';
 
-
+import { AuthProvider } from '../../providers/auth/auth';
 import { ScreenOrientation } from '@ionic-native/screen-orientation';
+import { Storage } from '@ionic/storage';
+import {Validators, FormBuilder, FormGroup } from '@angular/forms';
 /**
  * Generated class for the LoginPage page.
  *
@@ -19,12 +22,54 @@ import { ScreenOrientation } from '@ionic-native/screen-orientation';
 })
 export class LoginPage {
   loginData = {};
-  constructor(public navCtrl: NavController, public navParams: NavParams,platform: Platform,  private screenOrientation: ScreenOrientation) { 
+  private logForms : FormGroup;
+ 
+  constructor(public navCtrl: NavController,
+              public navParams: NavParams,
+              platform: Platform,
+              private screenOrientation: ScreenOrientation,
+              private auth: AuthProvider,
+              private storage: Storage,
+              private formBuilder: FormBuilder
+      ) { 
    
   }
  
   logForm() {
+  
+    var headers = new Headers();
+    headers.append("Accept", 'application/json');
+    headers.append('Content-Type', 'application/json' );
+    let options = new RequestOptions({ headers: headers });
+
+    
+    let postParams = {
+      username: this.loginData['username'],
+      password: this.loginData['passsword']
+    }
+    
+    this.storage.get('userData').then((val) => {
+      if(val != null){
+        console.log(JSON.parse(val._body));
+       //this.storage.remove('userData');
+      }else{
+       
+      }
+   });
+
+    /*
+   //this.logForms =
+    this.formBuilder.group({
+    username: ['Username', Validators.required],
+    passsword: ['Password', Validators.required],
+  });
+  */
+
+     this.auth.login(JSON.stringify(postParams),options);
+   
+
     //console.log(this.loginData);
+
   }
   forOrientation(){
      // set to landscape
