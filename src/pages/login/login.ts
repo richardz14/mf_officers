@@ -22,8 +22,8 @@ import {Validators, FormBuilder, FormGroup } from '@angular/forms';
 })
 export class LoginPage {
   loginData = {};
-  private logForms : FormGroup;
- 
+   private logForms : FormGroup;
+  //private todo : FormGroup;
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
               platform: Platform,
@@ -32,41 +32,44 @@ export class LoginPage {
               private storage: Storage,
               private formBuilder: FormBuilder
       ) { 
-   
+        
+        this.logForms = this.formBuilder.group({
+          username: ['Username', Validators.required],
+          passsword: ['Password', Validators.required],
+        });
+
+        
   }
  
   logForm() {
-  
+ 
     var headers = new Headers();
     headers.append("Accept", 'application/json');
     headers.append('Content-Type', 'application/json' );
     let options = new RequestOptions({ headers: headers });
 
-    
+    /*
     let postParams = {
       username: this.loginData['username'],
       password: this.loginData['passsword']
     }
-    
+    */
+    let postParams = {
+      username: this.logForms.value.username,
+      password: this.logForms.value.passsword
+    }
+    console.log(postParams);
     this.storage.get('userData').then((val) => {
       if(val != null){
-        console.log(JSON.parse(val._body));
-       //this.storage.remove('userData');
+        //console.log(JSON.parse(val._body));
+       this.storage.remove('userData');
       }else{
        
       }
    });
 
-    /*
-   //this.logForms =
-    this.formBuilder.group({
-    username: ['Username', Validators.required],
-    passsword: ['Password', Validators.required],
-  });
-  */
-
      this.auth.login(JSON.stringify(postParams),options);
-   
+
 
     //console.log(this.loginData);
 
