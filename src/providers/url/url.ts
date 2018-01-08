@@ -9,7 +9,8 @@ import { Injectable } from '@angular/core';
 */
 @Injectable()
 export class UrlProvider {
-  public static url:string = "http://localhost/vhost/microfinance_mobile/micromobile/index.php/restful/";
+  public static url:string = "http://micromobile.test/index.php/restful/";
+  //don't forget to put /restful/ on the url
   constructor(public http: HttpClient) {
     //console.log('Hello UrlProvider Provider');
   }

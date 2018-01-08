@@ -42,7 +42,7 @@ export class LoginPage {
               private formBuilder: FormBuilder) { 
         
 
-      this.OverridingLogin();
+      //this.OverridingLogin();
 
         this.logForms = this.formBuilder.group({
           username: ['', Validators.required],
