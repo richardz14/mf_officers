@@ -37,7 +37,7 @@ export class AuthProvider {
     this.http.post(this.url+"Login/loginFunction/", postParams,options)
     .subscribe(data => {
 
-      if(JSON.parse(data._body).response == 'success'){
+      if(JSON.parse(data['_body']).response == 'success'){
         this.storage.set('userData',data);
         this.navCtrl.push(HomePage);
        

@@ -11,6 +11,12 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 
+//templating
+import { TemplatePage } from '../pages/template/template';
+import { FooterPage } from '../pages/template/footer';
+import { HeaderPage } from '../pages/template/header';
+import { SidemenuPage } from '../pages/template/sidemenu';
+
 import { ScreenOrientation } from '@ionic-native/screen-orientation';
 import { AuthProvider } from '../providers/auth/auth';
 import { UrlProvider } from '../providers/url/url';
@@ -24,7 +30,11 @@ import { ConsoleLoggerService } from '../services/log4ts/console-logger.service'
   declarations: [
     MyApp,
     HomePage,
-    LoginPage
+    LoginPage,
+    TemplatePage,
+    FooterPage,
+    HeaderPage,
+    SidemenuPage,
   ],
   imports: [
     BrowserModule,
@@ -41,7 +51,11 @@ import { ConsoleLoggerService } from '../services/log4ts/console-logger.service'
   entryComponents: [
     MyApp,
     HomePage,
-    LoginPage
+    LoginPage,
+    TemplatePage,
+    FooterPage,
+    HeaderPage,
+    SidemenuPage,
   ],
   providers: [
     StatusBar,
