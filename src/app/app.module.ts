@@ -16,6 +16,10 @@ import { AuthProvider } from '../providers/auth/auth';
 import { UrlProvider } from '../providers/url/url';
 
 import { IonicStorageModule } from '@ionic/storage';
+
+// Logging Services
+import { LoggerService } from '../services/log4ts/logger.service';
+import { ConsoleLoggerService } from '../services/log4ts/console-logger.service';
 @NgModule({
   declarations: [
     MyApp,
@@ -26,8 +30,12 @@ import { IonicStorageModule } from '@ionic/storage';
     BrowserModule,
     HttpModule,
     HttpClientModule,
-    IonicModule.forRoot(MyApp),
-    IonicStorageModule.forRoot()
+    IonicModule.forRoot(MyApp,{}, {
+      links: [
+        { component: HomePage, name: 'LoginPage', segment: 'login' }
+      ]
+    }),
+    IonicStorageModule.forRoot(),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -41,7 +49,9 @@ import { IonicStorageModule } from '@ionic/storage';
     ScreenOrientation,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     AuthProvider,
-    UrlProvider
+    UrlProvider,
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    {provide: LoggerService, useClass: ConsoleLoggerService}
   ]
 })
 export class AppModule {}

@@ -6,7 +6,11 @@ import { Http, Headers, RequestOptions } from '@angular/http';
 import { AuthProvider } from '../../providers/auth/auth';
 import { ScreenOrientation } from '@ionic-native/screen-orientation';
 import { Storage } from '@ionic/storage';
-import {Validators, FormBuilder, FormGroup } from '@angular/forms';
+import {Validators, FormBuilder, FormGroup, FormControl, AbstractControl } from '@angular/forms';
+
+// home class
+import { HomePage } from '../../pages/home/home';
+
 /**
  * Generated class for the LoginPage page.
  *
@@ -22,7 +26,12 @@ import {Validators, FormBuilder, FormGroup } from '@angular/forms';
 })
 export class LoginPage {
   loginData = {};
-   private logForms : FormGroup;
+   logForms : FormGroup;
+   username:AbstractControl;
+   password: AbstractControl;
+   errorMsg: AbstractControl;
+   errorMessage:string = '';
+   
   //private todo : FormGroup;
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
@@ -30,35 +39,56 @@ export class LoginPage {
               private screenOrientation: ScreenOrientation,
               private auth: AuthProvider,
               private storage: Storage,
-              private formBuilder: FormBuilder
-      ) { 
+              private formBuilder: FormBuilder) { 
         
-        this.logForms = this.formBuilder.group({
-          username: ['Username', Validators.required],
-          passsword: ['Password', Validators.required],
-        });
 
+      this.OverridingLogin();
+
+        this.logForms = this.formBuilder.group({
+          username: ['', Validators.required],
+          password: ['', Validators.required],
+        });
         
+        this.username = this.logForms.contains['username'];
+        this.password = this.logForms.contains['password'];
+        /*
+    this.username = new FormControl('', Validators.required);
+    this.password = new FormControl('', Validators.required);
+
+    this.logForms = formBuilder.group({
+      username: this.username,
+      password: this.password
+    });
+      */
+
   }
- 
-  logForm() {
- 
-    var headers = new Headers();
+
+  /* if user has login this will override */
+  OverridingLogin(){
+    this.storage.get('userData').then((val) => {
+      if(val != null){
+         // this.navCtrl.push(HomePage);
+          this.storage.remove('userData');
+      }else{
+       
+      }
+     });
+  }
+
+  logForm(user) {
+   
+    if(user.username !== undefined && user.password !== undefined){
+    
+      var headers = new Headers();
     headers.append("Accept", 'application/json');
     headers.append('Content-Type', 'application/json' );
     let options = new RequestOptions({ headers: headers });
 
-    /*
-    let postParams = {
-      username: this.loginData['username'],
-      password: this.loginData['passsword']
-    }
-    */
     let postParams = {
       username: this.logForms.value.username,
-      password: this.logForms.value.passsword
+      password: this.logForms.value.password
     }
-    console.log(postParams);
+    
     this.storage.get('userData').then((val) => {
       if(val != null){
         //console.log(JSON.parse(val._body));
@@ -69,6 +99,19 @@ export class LoginPage {
    });
 
      this.auth.login(JSON.stringify(postParams),options);
+     // console.log(this.auth.isLogin);
+     /*
+      if(this.auth.isLogin == true){
+        //this.errorMessage = '';
+        this.navCtrl.push(HomePage);
+      }else{
+        alert("Username or Password is incorrect!");
+        //this.errorMessage = 'Username or Password is incorrect!';
+      }
+    }else{
+      */
+     
+    }
 
 
     //console.log(this.loginData);

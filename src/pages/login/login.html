@@ -18,11 +18,28 @@
     <div class="wrapper">
 	<div class="container">
 		<h1>BARILLA</h1>
-    <!-- submitting  (ngSubmit)="logForm()" -->
-    <form class="form" [formGroup]="logForms" (ngSubmit)="logForm()">
-        <input type="text" [(ngModel)]="loginData.username" name="username" formControlName="username" placeholder="Username">
-        <input type="password" [(ngModel)]="loginData.passsword" name="passsword" formControlName="passsword" placeholder="Password">
- 
+    <!-- submitting  (ngSubmit)="logForm()" (click)="onSignIn()"-->
+
+    <form class="form" [formGroup]="logForms" (ngSubmit)="logForm(logForms.value)">
+      <!--
+        <span class="help-block form-error text-danger small" 
+        *ngIf="errorMessage !== null || errorMessage !== '' ">  <b style="color:red;">Username or Password is incorrect!</b> <br>  <br></span>
+      -->
+        <input type="text" [(ngModel)]="logForms.username" name="username" formControlName="username" [formControl]="logForms.controls['username']" placeholder="Username">
+       
+        <span class="help-block form-error text-danger small" 
+        *ngIf="logForms.controls['username'].errors?.required &&
+        logForms.controls['username'].touched">  <b style="color:red;">Username is required</b> </span>
+
+
+      
+        <input type="password" [(ngModel)]="logForms.password" name="password" formControlName="password" [formControl]="logForms.controls['password']" placeholder="Password">
+       
+        <span class="help-block form-error text-danger small" 
+        *ngIf="logForms.controls['password'].errors?.required &&
+        logForms.controls['password'].touched">  <b style="color:red;">Password is required</b> <br></span>
+
+      
       <button ion-button type="submit" id="login-button" >Login</button>
      
     </form>
