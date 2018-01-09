@@ -16,6 +16,17 @@ import { SidemenuPage } from '../../pages/template/sidemenu';
   selector: 'page-template',
   templateUrl: 'template.html',
   entryComponents: [FooterPage,HeaderPage,SidemenuPage],
+  /*
+  styleUrls: [
+    'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic',
+    'assets/styles/admin.min.scss',
+    'assets/styles/_all-skins.min.scss',
+    'assets/styles/bootstrap.min.scss',
+    'assets/styles/font-awesome.min.scss',
+    'assets/styles/ionicons.min.scss',
+    'assets/styles/jquery-jvectormap.scss',
+]
+*/
 })
 export class TemplatePage {
 

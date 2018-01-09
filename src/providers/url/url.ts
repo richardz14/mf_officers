@@ -13,6 +13,8 @@ export class UrlProvider {
   //don't forget to put /restful/ on the url
   constructor(public http: HttpClient) {
     //console.log('Hello UrlProvider Provider');
+    //console.log("$('.button-collapse').sideNav();");
+    
   }
 
 }

@@ -26,6 +26,9 @@ import { IonicStorageModule } from '@ionic/storage';
 // Logging Services
 import { LoggerService } from '../services/log4ts/logger.service';
 import { ConsoleLoggerService } from '../services/log4ts/console-logger.service';
+
+import 'materialize-css';
+import { MaterializeModule } from 'angular2-materialize';
 @NgModule({
   declarations: [
     MyApp,
@@ -40,6 +43,7 @@ import { ConsoleLoggerService } from '../services/log4ts/console-logger.service'
     BrowserModule,
     HttpModule,
     HttpClientModule,
+    MaterializeModule,
     IonicModule.forRoot(MyApp,{}, {
       links: [
         { component: HomePage, name: 'LoginPage', segment: 'login' }
