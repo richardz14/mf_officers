@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
+import { SchedulePage } from '../pages/schedule/schedule';
 
 //templating
 import { TemplatePage } from '../pages/template/template';
@@ -38,6 +39,7 @@ import { MaterializeModule } from 'angular2-materialize';
     FooterPage,
     HeaderPage,
     SidemenuPage,
+    SchedulePage,
   ],
   imports: [
     BrowserModule,
@@ -60,6 +62,7 @@ import { MaterializeModule } from 'angular2-materialize';
     FooterPage,
     HeaderPage,
     SidemenuPage,
+    SchedulePage,
   ],
   providers: [
     StatusBar,

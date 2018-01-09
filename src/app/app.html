@@ -1,1 +1,33 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="content">
+        <ion-header>
+          <ion-toolbar>
+            <ion-title> Barilla </ion-title>
+          </ion-toolbar>
+        </ion-header>
+      
+        <ion-content class="" style="background-color: c0c0c0;">
+                <!--
+                <ion-list>
+                        <a class="waves-effect">Dasboard</a>
+                 </ion-list>
+                 <ion-list>
+                        <a class="waves-effect">Schedules</a>
+                 </ion-list>
+                 <ion-list>
+                        <a class="waves-effect">Loan Accounts</a>
+                 </ion-list>
+                -->
+        
+          <ion-list>
+            <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+              {{p.title}}
+            </button>
+          </ion-list>
+        
+        </ion-content>
+      
+      </ion-menu>
+      
+      <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+      <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+     
