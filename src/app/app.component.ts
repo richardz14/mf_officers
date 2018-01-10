@@ -13,20 +13,19 @@ import { Storage } from '@ionic/storage';
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
-  rootPage:any = LoginPage;
+  rootPage:any = HomePage;
   
   pages: Array<{title: string, component: any}>;
-  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen,private storage: Storage) {
+  constructor(private platform: Platform,private statusBar: StatusBar,private splashScreen: SplashScreen,private storage: Storage) {
 
     this.storage.get('userData').then((val) => {
       if(val != null){
-          this.rootPage = HomePage;
+          //this.rootPage = HomePage; //original
       }else{
-          this.rootPage = LoginPage;
+          //this.rootPage = LoginPage; //original
       }
+    
      });
-     
-    this.initializeApp(platform, statusBar, splashScreen);
 
     this.pages = [
       { title: 'Dashboard', component: HomePage },
@@ -34,13 +33,12 @@ export class MyApp {
     ];
 
   }
-  initializeApp(p, sb, ss){
-    p.ready().then(() => {
+  initializeApp(){
+    this.platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
-      sb.styleDefault();
-      ss.hide();
-
+      this.statusBar.styleDefault();
+      this.splashScreen.hide();
     });
   }
   openPage(page) {
