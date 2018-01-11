@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <script data-ionic="inject">
-    (function(w){var i=w.Ionic=w.Ionic||{};i.version='3.9.2';i.angular='5.0.3';i.staticDir='build/';})(window);
-  </script>
   <meta charset="UTF-8">
   <title>Ionic App</title>
   <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -44,6 +41,13 @@
   <link href="assets/styles/admin_materialize.css" rel="stylesheet">
   <link href="assets/styles/material_font.css" rel="stylesheet" type="text/css">
 
+  <!--
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.1/css/responsive.bootstrap.min.css">
+  -->
+  <link rel="stylesheet" type="text/css" href="assets/datatable/jquery.dataTables.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/datatable/responsive.bootstrap.min.css">
+
 </head>
 <body>
 
@@ -72,11 +76,24 @@
     </script>
   -->
 
+  <!--
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
+  -->
+  <!-- https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js -->
+  <!--
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/responsive/2.2.1/js/dataTables.responsive.min.js"></script>
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/responsive/2.2.1/js/responsive.bootstrap.min.js"></script>
+  -->
+  <script type="text/javascript" charset="utf8" src="assets/datatable/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" charset="utf8" src="assets/datatable/dataTables.responsive.min.js"></script>
+  <script type="text/javascript" charset="utf8" src="assets/datatable/responsive.bootstrap.min.js"></script>
+  
+
   <script>
   setTimeout(function(){
     $('.button-collapse').sideNav();
   },200);
- 
+
   </script>
   
 </body>

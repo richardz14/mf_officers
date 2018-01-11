@@ -12,38 +12,43 @@
   <!-- content -->
   <main>
     <div class="container">
+        
         <div class="row">
             <div class="col s12 m5">
-                <table class="tableData">
+                <div class="card-panel default">
+                    <a (click)="openModal()" class="waves-effect waves-light btn" style="width: 100%;"><i class="material-icons left">add</i>Add Client</a>
+
+                <table class="table table_id display responsive no-wrap" width="100%">
                     <thead>
-                      <tr>
-                          <th>Name</th>
-                          <th>Item Name</th>
-                          <th>Item Price</th>
-                          <th>Item Price</th>
-                          <th>Item Price</th>
-                          <th>Item Price</th>
-                          <th>Item Price</th>
-                          <th>Item Price</th>
-                          <th>Item Price</th>
-                      </tr>
+                        <tr>
+                            <th>Column 1</th>
+                            <th>Column 2</th>
+                            <th>Column 3</th>
+                            <th>Column 4</th>
+                            <th>Column 5</th>
+                            <th>Column 6</th>
+                        </tr>
                     </thead>
-            
                     <tbody>
-                      <tr>
-                        <td>Alvin</td>
-                        <td>Eclair</td>
-                        <td>$0.87</td>
-                        <td>$0.87</td>
-                        <td>$0.87</td>
-                        <td>$0.87</td>
-                        <td>$0.87</td>
-                        <td>$0.87</td>
-                        <td>$0.87</td>
-                      </tr>
-                     
+                        <tr>
+                            <td>Row 1 Data 1</td>
+                            <td>Row 1 Data 2</td>
+                            <td>Row 1 Data 1</td>
+                            <td>Row 1 Data 2</td>
+                            <td>Row 1 Data 1</td>
+                            <td>Row 1 Data 2</td>
+                        </tr>
+                        <tr>
+                            <td>Row 1 Data 1</td>
+                            <td>Row 1 Data 2</td>
+                            <td>Row 1 Data 1</td>
+                            <td>Row 1 Data 2</td>
+                            <td>Row 1 Data 1</td>
+                            <td>Row 1 Data 2</td>
+                        </tr>
                     </tbody>
-                  </table>
+                </table>
+              </div>
             </div>
         </div>
     </div>
@@ -52,4 +57,8 @@
    
 <page-footer></page-footer>
 
+
+  <!-- modal -->
+  
+  <!-- end of modal -->
 </ion-content>

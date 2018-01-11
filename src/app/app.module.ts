@@ -13,6 +13,8 @@ import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { SchedulePage } from '../pages/schedule/schedule';
 
+/* modal controllers */
+import { ModalsPage } from '../pages/modals/modals';
 
 //templating
 import { TemplatePage } from '../pages/template/template';
@@ -50,6 +52,7 @@ import { MaterializeModule } from 'angular2-materialize';
     ClientPage,
     LoanPage,
     PaymentPage,
+    ModalsPage,
   ],
   imports: [
     BrowserModule,
@@ -76,6 +79,7 @@ import { MaterializeModule } from 'angular2-materialize';
     ClientPage,
     LoanPage,
     PaymentPage,
+    ModalsPage,
   ],
   providers: [
     StatusBar,

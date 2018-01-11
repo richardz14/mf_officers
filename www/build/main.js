@@ -24,9 +24,9 @@ var HomePage = (function () {
     }
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\home\home.html"*/'\n\n<ion-header>\n\n    <ion-navbar>\n\n      <button ion-button menuToggle>\n\n        <ion-icon name="menu"></ion-icon>\n\n      </button>\n\n      <ion-title>HOME</ion-title>\n\n    </ion-navbar>\n\n  </ion-header>\n\n  \n\n<ion-content>\n\n \n\n  <!--\n\n    <page-template></page-template>\n\n    <page-header></page-header>\n\n    <page-sidemenu></page-sidemenu>\n\n  -->\n\n    <!-- content -->\n\n   \n\n    <main>\n\n      <div class="container">\n\n          <div class="row">\n\n              <div class="col s12 m5">\n\n                <div class="card-panel teal">\n\n                  <span class="white-text">I am a very simple card. I am good at containing small bits of information.\n\n                  I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.\n\n                  </span>\n\n                </div>\n\n              </div>\n\n            </div>\n\n\n\n            <div class="row">\n\n                <div class="col s12 m5">\n\n                  <div class="card-panel teal">\n\n                    <span class="white-text">I am a very simple card. I am good at containing small bits of information.\n\n                    I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.\n\n                    </span>\n\n                  </div>\n\n                </div>\n\n              </div>\n\n\n\n            \n\n      </div>\n\n    </main>\n\n    <!-- end of content -->\n\n   \n\n<page-footer></page-footer>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\home\home.html"*/,
+            selector: 'page-home',template:/*ion-inline-start:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\home\home.html"*/'\n\n<ion-header>\n\n    <ion-navbar>\n\n      <button ion-button menuToggle>\n\n        <ion-icon name="menu"></ion-icon>\n\n      </button>\n\n      <ion-title>HOME</ion-title>\n\n    </ion-navbar>\n\n  </ion-header>\n\n  \n\n<ion-content>\n\n \n\n  <!--\n\n    <page-template></page-template>\n\n    <page-header></page-header>\n\n    <page-sidemenu></page-sidemenu>\n\n  -->\n\n    <!-- content -->\n\n   \n\n    <main>\n\n      <div class="container">\n\n          <div class="row">\n\n              <div class="col s12 m5">\n\n                <div class="card-panel teal">\n\n                  <span class="white-text">I am a very simple card. I am good at containing small bits of information.\n\n                  I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.\n\n                  </span>\n\n                </div>\n\n              </div>\n\n            </div>\n\n\n\n            <div class="row">\n\n                <div class="col s12 m5">\n\n                  <div class="card-panel teal">\n\n                    <span class="white-text">I am a very simple card. I am good at containing small bits of information.\n\n                    I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.\n\n                    </span>\n\n                  </div>\n\n                </div>\n\n              </div>\n\n  \n\n      </div>\n\n    </main>\n\n    <!-- end of content -->\n\n   \n\n<page-footer></page-footer>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\home\home.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
     ], HomePage);
     return HomePage;
 }());
@@ -105,7 +105,7 @@ var SchedulePage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-schedule',template:/*ion-inline-start:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\schedule\schedule.html"*/'\n\n<ion-header>\n\n    <ion-navbar>\n\n      <button ion-button menuToggle>\n\n        <ion-icon name="menu"></ion-icon>\n\n      </button>\n\n      <ion-title>SCHEDULE</ion-title>\n\n    </ion-navbar>\n\n  </ion-header>\n\n\n\n<ion-content>\n\n    <!--\n\n    <page-template></page-template>\n\n    <page-header></page-header>\n\n    <page-sidemenu></page-sidemenu>\n\n    -->\n\n    <!-- content -->\n\n    <main>\n\n      <div class="container">\n\n         <div class="row">\n\n            <div class="col s12 m9 l10">\n\n              Schedule\n\n           </div>\n\n         </div>\n\n      </div>\n\n    </main>\n\n    <!-- end of content -->\n\n    <page-footer></page-footer>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\schedule\schedule.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
     ], SchedulePage);
     return SchedulePage;
 }());
@@ -121,6 +121,7 @@ var SchedulePage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ClientPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_modals_modals__ = __webpack_require__(756);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -132,6 +133,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
+
 /**
  * Generated class for the ClientPage page.
  *
@@ -139,20 +142,27 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Ionic pages and navigation.
  */
 var ClientPage = (function () {
-    function ClientPage(navCtrl, navParams) {
+    function ClientPage(navCtrl, navParams, modalCtrl) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
+        this.modalCtrl = modalCtrl;
     }
     ClientPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad ClientPage');
+        eval('$(".table_id").DataTable({"bLengthChange": false,"bFilter": true,"bInfo": false,"bAutoWidth": false});');
+        //console.log('ionViewDidLoad ClientPage');
+    };
+    ClientPage.prototype.openModal = function () {
+        var myModal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_2__pages_modals_modals__["a" /* ModalsPage */]);
+        myModal.present();
     };
     ClientPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-client',template:/*ion-inline-start:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\client\client.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>CLIENT</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content>\n  <!-- content -->\n  <main>\n    <div class="container">\n        <div class="row">\n            <div class="col s12 m5">\n                <table class="tableData">\n                    <thead>\n                      <tr>\n                          <th>Name</th>\n                          <th>Item Name</th>\n                          <th>Item Price</th>\n                          <th>Item Price</th>\n                          <th>Item Price</th>\n                          <th>Item Price</th>\n                          <th>Item Price</th>\n                          <th>Item Price</th>\n                          <th>Item Price</th>\n                      </tr>\n                    </thead>\n            \n                    <tbody>\n                      <tr>\n                        <td>Alvin</td>\n                        <td>Eclair</td>\n                        <td>$0.87</td>\n                        <td>$0.87</td>\n                        <td>$0.87</td>\n                        <td>$0.87</td>\n                        <td>$0.87</td>\n                        <td>$0.87</td>\n                        <td>$0.87</td>\n                      </tr>\n                     \n                    </tbody>\n                  </table>\n            </div>\n        </div>\n    </div>\n  </main>\n    <!-- end of content -->\n   \n<page-footer></page-footer>\n\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\client\client.html"*/,
+            selector: 'page-client',template:/*ion-inline-start:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\client\client.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>CLIENT</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content>\n\n  <!-- content -->\n\n  <main>\n\n    <div class="container">\n\n        \n\n        <div class="row">\n\n            <div class="col s12 m5">\n\n                <div class="card-panel default">\n\n                    <a (click)="openModal()" class="waves-effect waves-light btn" style="width: 100%;"><i class="material-icons left">add</i>Add Client</a>\n\n\n\n                <table class="table table_id display responsive no-wrap" width="100%">\n\n                    <thead>\n\n                        <tr>\n\n                            <th>Column 1</th>\n\n                            <th>Column 2</th>\n\n                            <th>Column 3</th>\n\n                            <th>Column 4</th>\n\n                            <th>Column 5</th>\n\n                            <th>Column 6</th>\n\n                        </tr>\n\n                    </thead>\n\n                    <tbody>\n\n                        <tr>\n\n                            <td>Row 1 Data 1</td>\n\n                            <td>Row 1 Data 2</td>\n\n                            <td>Row 1 Data 1</td>\n\n                            <td>Row 1 Data 2</td>\n\n                            <td>Row 1 Data 1</td>\n\n                            <td>Row 1 Data 2</td>\n\n                        </tr>\n\n                        <tr>\n\n                            <td>Row 1 Data 1</td>\n\n                            <td>Row 1 Data 2</td>\n\n                            <td>Row 1 Data 1</td>\n\n                            <td>Row 1 Data 2</td>\n\n                            <td>Row 1 Data 1</td>\n\n                            <td>Row 1 Data 2</td>\n\n                        </tr>\n\n                    </tbody>\n\n                </table>\n\n              </div>\n\n            </div>\n\n        </div>\n\n    </div>\n\n  </main>\n\n    <!-- end of content -->\n\n   \n\n<page-footer></page-footer>\n\n\n\n\n\n  <!-- modal -->\n\n  \n\n  <!-- end of modal -->\n\n</ion-content>\n\n'/*ion-inline-end:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\client\client.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* ModalController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* ModalController */]) === "function" && _c || Object])
     ], ClientPage);
     return ClientPage;
+    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=client.js.map
@@ -195,7 +205,7 @@ var LoanPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-loan',template:/*ion-inline-start:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\loan\loan.html"*/'<ion-header>\n    <ion-navbar>\n      <button ion-button menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n      <ion-title>LOAN</ion-title>\n    </ion-navbar>\n  </ion-header>\n  \n  \n  <ion-content>\n    <!-- content -->\n    <main>\n      <div class="container">\n          <div class="row">\n              <div class="col s12 m5">\n  \n              </div>\n          </div>\n      </div>\n    </main>\n      <!-- end of content -->\n     \n  <page-footer></page-footer>\n  \n  </ion-content>\n  '/*ion-inline-end:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\loan\loan.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
     ], LoanPage);
     return LoanPage;
 }());
@@ -240,7 +250,7 @@ var PaymentPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-payment',template:/*ion-inline-start:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\payment\payment.html"*/'<ion-header>\n    <ion-navbar>\n      <button ion-button menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n      <ion-title>PAYMENT</ion-title>\n    </ion-navbar>\n  </ion-header>\n  \n  \n  <ion-content>\n    <!-- content -->\n    <main>\n      <div class="container">\n          <div class="row">\n              <div class="col s12 m5">\n  \n              </div>\n          </div>\n      </div>\n    </main>\n      <!-- end of content -->\n     \n  <page-footer></page-footer>\n  \n  </ion-content>\n  '/*ion-inline-end:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\payment\payment.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
     ], PaymentPage);
     return PaymentPage;
 }());
@@ -412,7 +422,7 @@ var HeaderPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-header',template:/*ion-inline-start:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\template\header.html"*/'\n\n<!--\n\n<header>\n\n\n\n    <nav class="top-nav" style="background-color: #3c8dbc;">\n\n      <div class="container">\n\n            <a data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>\n\n            <div class="nav-wrapper">\n\n                    <a class="page-title">Barilla</a>\n\n                </div>\n\n              </div>\n\n    </nav>\n\n     <ul id="slide-out" class="side-nav" style="background-color: c0c0c0;">\n\n         <li><a class="waves-effect">Dasboard</a></li>\n\n         <li><a class="waves-effect">Schedules</a></li>\n\n         <li><a class="waves-effect">Loan Accounts</a></li>\n\n    </ul>\n\n          \n\n    \n\n  </header>\n\n\n\n-->'/*ion-inline-end:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\template\header.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
     ], HeaderPage);
     return HeaderPage;
 }());
@@ -457,7 +467,7 @@ var FooterPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-footer',template:/*ion-inline-start:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\template\footer.html"*/'<footer class="page-footer" style="bottom:0 ;width: 100%;position: fixed;padding-top: 0px;background: linear-gradient(-180deg, silver, silver);">\n\n    <div class="footer-copyright">\n\n      <div class="container" style="color: black;">\n\n      © 2017, All rights reserved.\n\n      <a class="black-text text-lighten-4 right" href="http://silverorbit.com">SilverOrbit</a>\n\n      </div>\n\n    </div>\n\n  </footer>'/*ion-inline-end:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\template\footer.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
     ], FooterPage);
     return FooterPage;
 }());
@@ -502,7 +512,7 @@ var SidemenuPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-sidemenu',template:/*ion-inline-start:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\template\sidemenu.html"*/'<ion-header>\n\n        <ion-navbar>\n\n          <button ion-button menuToggle>\n\n            <ion-icon name="menu"></ion-icon>\n\n          </button>\n\n          <ion-title>BARILLA</ion-title>\n\n        </ion-navbar>\n\n      </ion-header>'/*ion-inline-end:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\template\sidemenu.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
     ], SidemenuPage);
     return SidemenuPage;
 }());
@@ -541,22 +551,23 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_home_home__ = __webpack_require__(103);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_login_login__ = __webpack_require__(294);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_schedule_schedule__ = __webpack_require__(202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_template_template__ = __webpack_require__(295);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_template_footer__ = __webpack_require__(210);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_template_header__ = __webpack_require__(209);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_template_sidemenu__ = __webpack_require__(211);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_client_client__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_loan_loan__ = __webpack_require__(204);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_payment_payment__ = __webpack_require__(205);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__ionic_native_screen_orientation__ = __webpack_require__(208);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__providers_auth_auth__ = __webpack_require__(206);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__providers_url_url__ = __webpack_require__(207);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__ionic_storage__ = __webpack_require__(50);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__services_log4ts_logger_service__ = __webpack_require__(296);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__services_log4ts_console_logger_service__ = __webpack_require__(297);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24_materialize_css__ = __webpack_require__(299);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24_materialize_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_24_materialize_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25_angular2_materialize__ = __webpack_require__(303);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_modals_modals__ = __webpack_require__(756);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_template_template__ = __webpack_require__(295);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_template_footer__ = __webpack_require__(210);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_template_header__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_template_sidemenu__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_client_client__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_loan_loan__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_payment_payment__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__ionic_native_screen_orientation__ = __webpack_require__(208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__providers_auth_auth__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__providers_url_url__ = __webpack_require__(207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__ionic_storage__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__services_log4ts_logger_service__ = __webpack_require__(296);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__services_log4ts_console_logger_service__ = __webpack_require__(297);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25_materialize_css__ = __webpack_require__(299);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25_materialize_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_25_materialize_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26_angular2_materialize__ = __webpack_require__(303);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -574,6 +585,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+/* modal controllers */
 
 //templating
 
@@ -602,50 +615,52 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* MyApp */],
                 __WEBPACK_IMPORTED_MODULE_8__pages_home_home__["a" /* HomePage */],
                 __WEBPACK_IMPORTED_MODULE_9__pages_login_login__["a" /* LoginPage */],
-                __WEBPACK_IMPORTED_MODULE_11__pages_template_template__["a" /* TemplatePage */],
-                __WEBPACK_IMPORTED_MODULE_12__pages_template_footer__["a" /* FooterPage */],
-                __WEBPACK_IMPORTED_MODULE_13__pages_template_header__["a" /* HeaderPage */],
-                __WEBPACK_IMPORTED_MODULE_14__pages_template_sidemenu__["a" /* SidemenuPage */],
+                __WEBPACK_IMPORTED_MODULE_12__pages_template_template__["a" /* TemplatePage */],
+                __WEBPACK_IMPORTED_MODULE_13__pages_template_footer__["a" /* FooterPage */],
+                __WEBPACK_IMPORTED_MODULE_14__pages_template_header__["a" /* HeaderPage */],
+                __WEBPACK_IMPORTED_MODULE_15__pages_template_sidemenu__["a" /* SidemenuPage */],
                 __WEBPACK_IMPORTED_MODULE_10__pages_schedule_schedule__["a" /* SchedulePage */],
-                __WEBPACK_IMPORTED_MODULE_15__pages_client_client__["a" /* ClientPage */],
-                __WEBPACK_IMPORTED_MODULE_16__pages_loan_loan__["a" /* LoanPage */],
-                __WEBPACK_IMPORTED_MODULE_17__pages_payment_payment__["a" /* PaymentPage */],
+                __WEBPACK_IMPORTED_MODULE_16__pages_client_client__["a" /* ClientPage */],
+                __WEBPACK_IMPORTED_MODULE_17__pages_loan_loan__["a" /* LoanPage */],
+                __WEBPACK_IMPORTED_MODULE_18__pages_payment_payment__["a" /* PaymentPage */],
+                __WEBPACK_IMPORTED_MODULE_11__pages_modals_modals__["a" /* ModalsPage */],
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_5__angular_http__["c" /* HttpModule */],
                 __WEBPACK_IMPORTED_MODULE_6__angular_common_http__["b" /* HttpClientModule */],
-                __WEBPACK_IMPORTED_MODULE_25_angular2_materialize__["a" /* MaterializeModule */],
+                __WEBPACK_IMPORTED_MODULE_26_angular2_materialize__["a" /* MaterializeModule */],
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* MyApp */], {}, {
                     links: [
                         { component: __WEBPACK_IMPORTED_MODULE_8__pages_home_home__["a" /* HomePage */], name: 'LoginPage', segment: 'login' }
                     ]
                 }),
-                __WEBPACK_IMPORTED_MODULE_21__ionic_storage__["a" /* IonicStorageModule */].forRoot(),
+                __WEBPACK_IMPORTED_MODULE_22__ionic_storage__["a" /* IonicStorageModule */].forRoot(),
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicApp */]],
             entryComponents: [
                 __WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* MyApp */],
                 __WEBPACK_IMPORTED_MODULE_8__pages_home_home__["a" /* HomePage */],
                 __WEBPACK_IMPORTED_MODULE_9__pages_login_login__["a" /* LoginPage */],
-                __WEBPACK_IMPORTED_MODULE_11__pages_template_template__["a" /* TemplatePage */],
-                __WEBPACK_IMPORTED_MODULE_12__pages_template_footer__["a" /* FooterPage */],
-                __WEBPACK_IMPORTED_MODULE_13__pages_template_header__["a" /* HeaderPage */],
-                __WEBPACK_IMPORTED_MODULE_14__pages_template_sidemenu__["a" /* SidemenuPage */],
+                __WEBPACK_IMPORTED_MODULE_12__pages_template_template__["a" /* TemplatePage */],
+                __WEBPACK_IMPORTED_MODULE_13__pages_template_footer__["a" /* FooterPage */],
+                __WEBPACK_IMPORTED_MODULE_14__pages_template_header__["a" /* HeaderPage */],
+                __WEBPACK_IMPORTED_MODULE_15__pages_template_sidemenu__["a" /* SidemenuPage */],
                 __WEBPACK_IMPORTED_MODULE_10__pages_schedule_schedule__["a" /* SchedulePage */],
-                __WEBPACK_IMPORTED_MODULE_15__pages_client_client__["a" /* ClientPage */],
-                __WEBPACK_IMPORTED_MODULE_16__pages_loan_loan__["a" /* LoanPage */],
-                __WEBPACK_IMPORTED_MODULE_17__pages_payment_payment__["a" /* PaymentPage */],
+                __WEBPACK_IMPORTED_MODULE_16__pages_client_client__["a" /* ClientPage */],
+                __WEBPACK_IMPORTED_MODULE_17__pages_loan_loan__["a" /* LoanPage */],
+                __WEBPACK_IMPORTED_MODULE_18__pages_payment_payment__["a" /* PaymentPage */],
+                __WEBPACK_IMPORTED_MODULE_11__pages_modals_modals__["a" /* ModalsPage */],
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__["a" /* StatusBar */],
                 __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */],
-                __WEBPACK_IMPORTED_MODULE_18__ionic_native_screen_orientation__["a" /* ScreenOrientation */],
+                __WEBPACK_IMPORTED_MODULE_19__ionic_native_screen_orientation__["a" /* ScreenOrientation */],
                 { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicErrorHandler */] },
-                __WEBPACK_IMPORTED_MODULE_19__providers_auth_auth__["a" /* AuthProvider */],
-                __WEBPACK_IMPORTED_MODULE_20__providers_url_url__["a" /* UrlProvider */],
+                __WEBPACK_IMPORTED_MODULE_20__providers_auth_auth__["a" /* AuthProvider */],
+                __WEBPACK_IMPORTED_MODULE_21__providers_url_url__["a" /* UrlProvider */],
                 { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicErrorHandler */] },
-                { provide: __WEBPACK_IMPORTED_MODULE_22__services_log4ts_logger_service__["a" /* LoggerService */], useClass: __WEBPACK_IMPORTED_MODULE_23__services_log4ts_console_logger_service__["a" /* ConsoleLoggerService */] }
+                { provide: __WEBPACK_IMPORTED_MODULE_23__services_log4ts_logger_service__["a" /* LoggerService */], useClass: __WEBPACK_IMPORTED_MODULE_24__services_log4ts_console_logger_service__["a" /* ConsoleLoggerService */] }
             ]
         })
     ], AppModule);
@@ -728,13 +743,13 @@ var MyApp = (function () {
         this.nav.setRoot(page.component);
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* Nav */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* Nav */])
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Nav */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Nav */])
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\xampp\htdocs\microFinance\mf_officers\src\app\app.html"*/'<ion-menu [content]="content">\n\n        <ion-header>\n\n          <ion-toolbar>\n\n            <ion-title> Menu </ion-title>\n\n          </ion-toolbar>\n\n        </ion-header>\n\n      \n\n        <ion-content class="" style="background-color: c0c0c0;">\n\n                <!--\n\n                <ion-list>\n\n                        <a class="waves-effect">Dasboard</a>\n\n                 </ion-list>\n\n                 <ion-list>\n\n                        <a class="waves-effect">Schedules</a>\n\n                 </ion-list>\n\n                 <ion-list>\n\n                        <a class="waves-effect">Loan Accounts</a>\n\n                 </ion-list>\n\n                -->\n\n        \n\n          <ion-list class="animat">\n\n            <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)"> <i class="material-icons">{{p.icon}}</i>\n\n              {{p.title}}\n\n            </button>\n\n          </ion-list>\n\n        \n\n        </ion-content>\n\n      \n\n      </ion-menu>\n\n      \n\n      <!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n\n      <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n\n     \n\n      <!--\n\n      <header>\n\n        <div class="container"><a href="#" data-target="nav-mobile" class="top-nav sidenav-trigger waves-effect waves-light circle hide-on-large-only"><i class="material-icons">menu</i></a></div>\n\n        <ul id="nav-mobile" class="sidenav sidenav-fixed" style="overflow: auto; transform: translateX(-105%);">\n\n          <li class="logo"><a id="logo-container" href="/" class="brand-logo">\n\n              <object id="front-page-logo" type="image/svg+xml" data="res/materialize.svg" __idm_frm__="1635">Your browser does not support SVG</object></a></li>\n\n          <li class="search">\n\n            <div class="search-wrapper">\n\n              <input id="search" placeholder="Search"><i class="material-icons">search</i>\n\n              <div class="search-results"></div>\n\n            </div>\n\n          </li>\n\n          <li class="bold"><a href="about.html" class="waves-effect waves-teal">About</a></li>\n\n          <li class="bold"><a href="getting-started.html" class="waves-effect waves-teal">Getting Started</a></li>\n\n          \n\n          <li class="bold"><a href="mobile.html" class="waves-effect waves-teal">Mobile</a></li>\n\n          <li class="bold"><a href="showcase.html" class="waves-effect waves-teal">Showcase</a></li>\n\n          <li class="bold"><a href="themes.html" class="waves-effect waves-teal">Themes</a></li>\n\n        </ul>\n\n      </header>\n\n    -->'/*ion-inline-end:"C:\xampp\htdocs\microFinance\mf_officers\src\app\app.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */], __WEBPACK_IMPORTED_MODULE_9__ionic_storage__["b" /* Storage */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */], __WEBPACK_IMPORTED_MODULE_9__ionic_storage__["b" /* Storage */]])
     ], MyApp);
     return MyApp;
 }());
@@ -866,9 +881,9 @@ var LoginPage = (function () {
             selector: 'page-login',template:/*ion-inline-start:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\login\login.html"*/'<!--\n\n  Generated template for the LoginPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<!--\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>login</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n-->\n\n\n\n<ion-content padding>\n\n    <div class="wrapper">\n\n	<div class="container">\n\n		<h1>BARILLA</h1>\n\n    <!-- submitting  (ngSubmit)="logForm()" (click)="onSignIn()"-->\n\n\n\n    <form class="form" [formGroup]="logForms" (ngSubmit)="logForm(logForms.value)">\n\n      <!--\n\n        <span class="help-block form-error text-danger small" \n\n        *ngIf="errorMessage !== null || errorMessage !== \'\' ">  <b style="color:red;">Username or Password is incorrect!</b> <br>  <br></span>\n\n      -->\n\n        <input type="text" [(ngModel)]="logForms.username" name="username" formControlName="username" [formControl]="logForms.controls[\'username\']" placeholder="Username">\n\n       \n\n        <span class="help-block form-error text-danger small" \n\n        *ngIf="logForms.controls[\'username\'].errors?.required &&\n\n        logForms.controls[\'username\'].touched">  <b style="color:red;">Username is required</b> </span>\n\n\n\n\n\n      \n\n        <input type="password" [(ngModel)]="logForms.password" name="password" formControlName="password" [formControl]="logForms.controls[\'password\']" placeholder="Password">\n\n       \n\n        <span class="help-block form-error text-danger small" \n\n        *ngIf="logForms.controls[\'password\'].errors?.required &&\n\n        logForms.controls[\'password\'].touched">  <b style="color:red;">Password is required</b> <br></span>\n\n\n\n      \n\n      <button ion-button type="submit" id="login-button" >Login</button>\n\n     \n\n    </form>\n\n\n\n  </div>\n\n  <ul class="bg-bubbles">\n\n		<li></li>\n\n		<li></li>\n\n		<li></li>\n\n		<li></li>\n\n		<li></li>\n\n		<li></li>\n\n		<li></li>\n\n		<li></li>\n\n		<li></li>\n\n    <li></li>\n\n    <li></li>\n\n	</ul>\n\n</div>\n\n\n\n</ion-content>\n\n\n\n\n\n'/*ion-inline-end:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\login\login.html"*/,
             styleUrls: ['/pages/login/login.scss'],
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */],
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */],
             __WEBPACK_IMPORTED_MODULE_4__ionic_native_screen_orientation__["a" /* ScreenOrientation */],
             __WEBPACK_IMPORTED_MODULE_3__providers_auth_auth__["a" /* AuthProvider */],
             __WEBPACK_IMPORTED_MODULE_5__ionic_storage__["b" /* Storage */],
@@ -924,7 +939,7 @@ var TemplatePage = (function () {
             selector: 'page-template',template:/*ion-inline-start:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\template\template.html"*/'<!--\n\n  Generated template for the TemplatePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n\n\n<!--\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>template</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n \n\n</ion-content>\n\n-->'/*ion-inline-end:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\template\template.html"*/,
             entryComponents: [__WEBPACK_IMPORTED_MODULE_3__pages_template_footer__["a" /* FooterPage */], __WEBPACK_IMPORTED_MODULE_2__pages_template_header__["a" /* HeaderPage */], __WEBPACK_IMPORTED_MODULE_4__pages_template_sidemenu__["a" /* SidemenuPage */]],
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
     ], TemplatePage);
     return TemplatePage;
 }());
@@ -1108,6 +1123,57 @@ export const ENV = {
 
 */
 //# sourceMappingURL=environment.js.map
+
+/***/ }),
+
+/***/ 756:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+/**
+ * Generated class for the ModalsPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var ModalsPage = (function () {
+    function ModalsPage(navCtrl, navParams, viewCtrl) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.viewCtrl = viewCtrl;
+    }
+    ModalsPage.prototype.closeModal = function () {
+        this.viewCtrl.dismiss();
+    };
+    ModalsPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad ModalsPage');
+    };
+    ModalsPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-modals',template:/*ion-inline-start:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\modals\modals.html"*/'<!--\n  Generated template for the ModalsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>ADD CLIENT <button style="position: right;float: right;" ion-button [small]="true" [round]="isRound" (click)="closeModal()"><i class="material-icons">clear</i></button></ion-title>\n    \n  </ion-navbar>\n  \n</ion-header>\n\n\n<ion-content padding>\n    \n\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\modals\modals.html"*/,
+        }),
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */]) === "function" && _c || Object])
+    ], ModalsPage);
+    return ModalsPage;
+    var _a, _b, _c;
+}());
+
+//# sourceMappingURL=modals.js.map
 
 /***/ })
 
