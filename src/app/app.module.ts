@@ -7,17 +7,24 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 
+/* controllers */
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { SchedulePage } from '../pages/schedule/schedule';
+
 
 //templating
 import { TemplatePage } from '../pages/template/template';
 import { FooterPage } from '../pages/template/footer';
 import { HeaderPage } from '../pages/template/header';
 import { SidemenuPage } from '../pages/template/sidemenu';
+import { ClientPage } from '../pages/client/client';
+import { LoanPage } from '../pages/loan/loan';
+import { PaymentPage } from '../pages/payment/payment';
 
+
+/* providers/models */
 import { ScreenOrientation } from '@ionic-native/screen-orientation';
 import { AuthProvider } from '../providers/auth/auth';
 import { UrlProvider } from '../providers/url/url';
@@ -40,6 +47,9 @@ import { MaterializeModule } from 'angular2-materialize';
     HeaderPage,
     SidemenuPage,
     SchedulePage,
+    ClientPage,
+    LoanPage,
+    PaymentPage,
   ],
   imports: [
     BrowserModule,
@@ -63,6 +73,9 @@ import { MaterializeModule } from 'angular2-materialize';
     HeaderPage,
     SidemenuPage,
     SchedulePage,
+    ClientPage,
+    LoanPage,
+    PaymentPage,
   ],
   providers: [
     StatusBar,
