@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { ModalController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
 
 import { ModalsPage } from '../../pages/modals/modals';
 /**
@@ -26,7 +25,9 @@ export class ClientPage {
   }
 
   openModal() {
+    
     let myModal = this.modalCtrl.create(ModalsPage);
+    
     myModal.present();
   }
   

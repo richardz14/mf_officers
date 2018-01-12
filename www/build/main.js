@@ -134,7 +134,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
 /**
  * Generated class for the ClientPage page.
  *
@@ -1165,7 +1164,7 @@ var ModalsPage = (function () {
     };
     ModalsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-modals',template:/*ion-inline-start:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\modals\modals.html"*/'<!--\n  Generated template for the ModalsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>ADD CLIENT <button style="position: right;float: right;" ion-button [small]="true" [round]="isRound" (click)="closeModal()"><i class="material-icons">clear</i></button></ion-title>\n    \n  </ion-navbar>\n  \n</ion-header>\n\n\n<ion-content padding>\n    \n\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\modals\modals.html"*/,
+            selector: 'page-modals',template:/*ion-inline-start:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\modals\modals.html"*/'<!--\n  Generated template for the ModalsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>ADD CLIENT <button style="position: right;float: right;" ion-button [small]="true" [round]="isRound" (click)="closeModal()"><i class="material-icons">clear</i></button></ion-title>\n    \n  </ion-navbar>\n  \n</ion-header>\n\n\n<ion-content padding>\n    \n\n</ion-content>\n\n\n<ion-footer>\n    <ion-toolbar>\n      <ion-title>Footer</ion-title>\n    </ion-toolbar>\n  </ion-footer>'/*ion-inline-end:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\modals\modals.html"*/,
         }),
         __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */]) === "function" && _c || Object])
     ], ModalsPage);
