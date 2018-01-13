@@ -12,6 +12,7 @@ import { ViewController } from 'ionic-angular';
 @Component({
   selector: 'page-modals',
   templateUrl: 'modals.html',
+
 })
 export class ModalsPage {
 
@@ -21,7 +22,7 @@ export class ModalsPage {
     this.viewCtrl.dismiss();
   }
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ModalsPage');
+    //console.log('ionViewDidLoad ModalsPage');
   }
 
 }

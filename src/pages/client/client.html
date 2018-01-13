@@ -12,7 +12,7 @@
   <!-- content -->
   <main>
     <div class="container">
-        
+
         <div class="row">
             <div class="col s12 m5">
                 <div class="card-panel default">
@@ -21,31 +21,28 @@
                 <table class="table table_id display responsive no-wrap" width="100%">
                     <thead>
                         <tr>
-                            <th>Column 1</th>
-                            <th>Column 2</th>
-                            <th>Column 3</th>
-                            <th>Column 4</th>
-                            <th>Column 5</th>
-                            <th>Column 6</th>
+                            <th>Full Name</th>
+                            <th>Martial</th>
+                            <th>Address</th>
+                            <th>Birthday</th>
+                            <th>Contact #</th>
+                            <th>Year Stay</th>
+                            <th>  </th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Row 1 Data 1</td>
-                            <td>Row 1 Data 2</td>
-                            <td>Row 1 Data 1</td>
-                            <td>Row 1 Data 2</td>
-                            <td>Row 1 Data 1</td>
-                            <td>Row 1 Data 2</td>
+                        <tr *ngFor="let client of allData;let i=index; let last=last">
+
+                          <td> {{ client.FirstName+" "+client.LastName }} </td>
+                          <td> {{ client.MaritalStatus }} </td>
+                          <td> {{ client.HomeAddress1 }} </td>
+                          <td> {{ client.BirthDate }} </td>
+                          <td> {{ client.HomeAddressContact }} </td>
+                          <td> {{ client.YearsStayed }} </td>
+                          <td> buttons </td>
+                          {{last ? ev(i) : ''}}
                         </tr>
-                        <tr>
-                            <td>Row 1 Data 1</td>
-                            <td>Row 1 Data 2</td>
-                            <td>Row 1 Data 1</td>
-                            <td>Row 1 Data 2</td>
-                            <td>Row 1 Data 1</td>
-                            <td>Row 1 Data 2</td>
-                        </tr>
+                        
                     </tbody>
                 </table>
               </div>

@@ -1,7 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
+import { Storage } from '@ionic/storage';
+import { Http, Headers, RequestOptions } from '@angular/http';
 
 import { ModalsPage } from '../../pages/modals/modals';
+
+//providers
+import { ClientProvider } from '../../providers/client/client';
+
+import 'rxjs/add/operator/map';
+import {Observable} from 'rxjs/Rx';
+import 'rxjs/rx';
 /**
  * Generated class for the ClientPage page.
  *
@@ -10,24 +19,69 @@ import { ModalsPage } from '../../pages/modals/modals';
  */
 
 @IonicPage()
+
 @Component({
   selector: 'page-client',
   templateUrl: 'client.html',
+  //styleUrls: ['./pages/client/client.scss']
 })
-export class ClientPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,public modalCtrl: ModalController) {
+
+export class ClientPage {
+  public allData: {};
+  private globalFlag = -1;
+
+  constructor(public navCtrl: NavController,
+     public navParams: NavParams,
+     public modalCtrl: ModalController,
+     private client: ClientProvider,
+     private storage: Storage) {
+
+        
+    this.loadAllclients();
   }
 
   ionViewDidLoad() {
-    eval('$(".table_id").DataTable({"bLengthChange": false,"bFilter": true,"bInfo": false,"bAutoWidth": false});');
     //console.log('ionViewDidLoad ClientPage');
   }
+  loadDatatable(){
+      eval('$(".table_id").DataTable({"bLengthChange": false,"bFilter": true,"bInfo": false,"bAutoWidth": false});');
+  }
+  ev(flag){
+    if(flag != this.globalFlag){
+      this.loadDatatable();
+      this.globalFlag = flag;
+    }
+  }
+  loadAllclients(){
+    var headers = new Headers();
+    headers.append("Accept", 'application/json');
+    headers.append('Content-Type', 'application/json' );
+    let options = new RequestOptions({ headers: headers });
 
+ let agentId = 0;
+    this.storage.get('userData').then((val) => {
+      if(val != null){
+        agentId = JSON.parse(val._body).id;
+      }else{
+       // agentId = 0;
+      }
+   });
+    let postParams = {
+      agent_id: agentId +7,
+    }
+    
+    this.client.getClients(JSON.stringify(postParams),options)
+    .subscribe(data => this.allData = data.data
+      ,error => {
+        console.log("error");
+      });
+    
+   
+  }
+ 
   openModal() {
-    
     let myModal = this.modalCtrl.create(ModalsPage);
-    
     myModal.present();
   }
   

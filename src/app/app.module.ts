@@ -30,6 +30,7 @@ import { PaymentPage } from '../pages/payment/payment';
 import { ScreenOrientation } from '@ionic-native/screen-orientation';
 import { AuthProvider } from '../providers/auth/auth';
 import { UrlProvider } from '../providers/url/url';
+import { ClientProvider } from '../providers/client/client';
 
 import { IonicStorageModule } from '@ionic/storage';
 
@@ -39,6 +40,7 @@ import { ConsoleLoggerService } from '../services/log4ts/console-logger.service'
 
 import 'materialize-css';
 import { MaterializeModule } from 'angular2-materialize';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -89,7 +91,8 @@ import { MaterializeModule } from 'angular2-materialize';
     AuthProvider,
     UrlProvider,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    {provide: LoggerService, useClass: ConsoleLoggerService}
+    {provide: LoggerService, useClass: ConsoleLoggerService},
+    ClientProvider
   ]
 })
 export class AppModule {}

@@ -15527,36 +15527,8 @@ ion-modal {
 
 .modal-wrapper {
   z-index: 10;
-  /*
   height: 100%;
-  */
   contain: strict;
-
-  /* editid */
-  /* top: calc(50% - (50%/2)); */
-  top: 3%;
-  position: absolute;
-  left: 0;
-  right: 0;
-  width: 90%;
-  height: 94%;
-  padding: 10px;
-  z-index: 100;
-  margin: 0 auto;
-  padding: 10px;
-  color: #333;
-  background: #b4b2b2;
-  background: -moz-linear-gradient(top, rgb(243, 240, 213) 0%, #7e7b7b 100%);
-  background: -webkit-linear-gradient(top, rgb(243, 240, 213) 0%, #7e7b7b 100%);
-  background: linear-gradient(to bottom, rgb(243, 240, 213) 0%, #7e7b7b 100%);
-  border-radius: 5px;
-  box-shadow: 0 2px 3px rgba(51, 51, 51, .35);
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  overflow: hidden; 
-  /* end edit */
-
 }
 
 @media only screen and (min-width: 768px) and (min-height: 600px) {
@@ -26000,4 +25972,31 @@ page-login .bg-bubbles li:nth-child(11) {
     -webkit-transform: translateY(-900px) rotate(600deg);
     transform: translateY(-900px) rotate(600deg);
   }
+}
+
+page-modals .modal-wrapper {
+  /* editid */
+  /* top: calc(50% - (50%/2)); */
+  top: 3%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 90%;
+  height: 94%;
+  padding: 10px;
+  z-index: 100;
+  margin: 0 auto;
+  padding: 10px;
+  color: #333;
+  background: #b4b2b2;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f3f0d5), to(#7e7b7b));
+  background: linear-gradient(to bottom, #f3f0d5 0%, #7e7b7b 100%);
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 3px rgba(51, 51, 51, 0.35);
+  box-shadow: 0 2px 3px rgba(51, 51, 51, 0.35);
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  overflow: hidden;
+  /* end edit */
 }
