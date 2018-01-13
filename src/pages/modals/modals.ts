@@ -12,7 +12,7 @@ import { ViewController } from 'ionic-angular';
 @Component({
   selector: 'page-modals',
   templateUrl: 'modals.html',
-
+  styleUrls: ['assets/styles/modal.css'],
 })
 export class ModalsPage {
 

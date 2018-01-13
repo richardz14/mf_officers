@@ -26,7 +26,7 @@ var HomePage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-home',template:/*ion-inline-start:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\home\home.html"*/'\n\n<ion-header>\n\n    <ion-navbar>\n\n      <button ion-button menuToggle>\n\n        <ion-icon name="menu"></ion-icon>\n\n      </button>\n\n      <ion-title>HOME</ion-title>\n\n    </ion-navbar>\n\n  </ion-header>\n\n  \n\n<ion-content>\n\n \n\n  <!--\n\n    <page-template></page-template>\n\n    <page-header></page-header>\n\n    <page-sidemenu></page-sidemenu>\n\n  -->\n\n    <!-- content -->\n\n   \n\n    <main>\n\n      <div class="container">\n\n          <div class="row">\n\n              <div class="col s12 m5">\n\n                <div class="card-panel teal">\n\n                  <span class="white-text">I am a very simple card. I am good at containing small bits of information.\n\n                  I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.\n\n                  </span>\n\n                </div>\n\n              </div>\n\n            </div>\n\n\n\n            <div class="row">\n\n                <div class="col s12 m5">\n\n                  <div class="card-panel teal">\n\n                    <span class="white-text">I am a very simple card. I am good at containing small bits of information.\n\n                    I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.\n\n                    </span>\n\n                  </div>\n\n                </div>\n\n              </div>\n\n  \n\n      </div>\n\n    </main>\n\n    <!-- end of content -->\n\n   \n\n<page-footer></page-footer>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\home\home.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */]])
     ], HomePage);
     return HomePage;
 }());
@@ -148,7 +148,7 @@ var SchedulePage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-schedule',template:/*ion-inline-start:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\schedule\schedule.html"*/'\n\n<ion-header>\n\n    <ion-navbar>\n\n      <button ion-button menuToggle>\n\n        <ion-icon name="menu"></ion-icon>\n\n      </button>\n\n      <ion-title>SCHEDULE</ion-title>\n\n    </ion-navbar>\n\n  </ion-header>\n\n\n\n<ion-content>\n\n    <!--\n\n    <page-template></page-template>\n\n    <page-header></page-header>\n\n    <page-sidemenu></page-sidemenu>\n\n    -->\n\n    <!-- content -->\n\n    <main>\n\n      <div class="container">\n\n         <div class="row">\n\n            <div class="col s12 m9 l10">\n\n              Schedule\n\n           </div>\n\n         </div>\n\n      </div>\n\n    </main>\n\n    <!-- end of content -->\n\n    <page-footer></page-footer>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\schedule\schedule.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
     ], SchedulePage);
     return SchedulePage;
 }());
@@ -190,6 +190,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 /**
  * Generated class for the ClientPage page.
  *
@@ -197,16 +198,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Ionic pages and navigation.
  */
 var ClientPage = (function () {
-    function ClientPage(navCtrl, navParams, modalCtrl, client, storage) {
+    function ClientPage(navCtrl, navParams, modalCtrl, client, storage, loading) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.modalCtrl = modalCtrl;
         this.client = client;
         this.storage = storage;
+        this.loading = loading;
         this.globalFlag = -1;
         this.loadAllclients();
     }
     ClientPage.prototype.ionViewDidLoad = function () {
+        /*
+        let loader = this.loading.create({
+          content: 'Getting latest entries...',
+        });
+        loader.present().then(() => {
+          this.someService.getLatestEntries()
+            .subscribe(res => {
+              this.latestEntries = res;
+            });
+          loader.dismiss();
+        });
+        */
         //console.log('ionViewDidLoad ClientPage');
     };
     ClientPage.prototype.loadDatatable = function () {
@@ -247,12 +261,12 @@ var ClientPage = (function () {
     };
     ClientPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-client',template:/*ion-inline-start:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\client\client.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>CLIENT</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content>\n\n  <!-- content -->\n\n  <main>\n\n    <div class="container">\n\n\n\n        <div class="row">\n\n            <div class="col s12 m5">\n\n                <div class="card-panel default">\n\n                    <a (click)="openModal()" class="waves-effect waves-light btn" style="width: 100%;"><i class="material-icons left">add</i>Add Client</a>\n\n\n\n                <table class="table table_id display responsive no-wrap" width="100%">\n\n                    <thead>\n\n                        <tr>\n\n                            <th>Full Name</th>\n\n                            <th>Martial</th>\n\n                            <th>Address</th>\n\n                            <th>Birthday</th>\n\n                            <th>Contact #</th>\n\n                            <th>Year Stay</th>\n\n                            <th>  </th>\n\n                        </tr>\n\n                    </thead>\n\n                    <tbody>\n\n                        <tr *ngFor="let client of allData;let i=index; let last=last">\n\n\n\n                          <td> {{ client.FirstName+" "+client.LastName }} </td>\n\n                          <td> {{ client.MaritalStatus }} </td>\n\n                          <td> {{ client.HomeAddress1 }} </td>\n\n                          <td> {{ client.BirthDate }} </td>\n\n                          <td> {{ client.HomeAddressContact }} </td>\n\n                          <td> {{ client.YearsStayed }} </td>\n\n                          <td> buttons </td>\n\n                          {{last ? ev(i) : \'\'}}\n\n                        </tr>\n\n                        \n\n                    </tbody>\n\n                </table>\n\n              </div>\n\n            </div>\n\n        </div>\n\n    </div>\n\n  </main>\n\n    <!-- end of content -->\n\n   \n\n<page-footer></page-footer>\n\n\n\n\n\n  <!-- modal -->\n\n  \n\n  <!-- end of modal -->\n\n</ion-content>\n\n'/*ion-inline-end:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\client\client.html"*/,
+            selector: 'page-client',template:/*ion-inline-start:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\client\client.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>CLIENT</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content>\n\n  <!-- content -->\n\n  <main>\n\n    <div class="container">\n\n\n\n        <div class="row">\n\n            <div class="col s12 m5">\n\n                <div class="card-panel default">\n\n                    <a (click)="openModal()" class="waves-effect waves-light btn" style="width: 100%;"><i class="material-icons left">add</i>Add Client</a>\n\n\n\n                <table class="table table_id display responsive no-wrap" width="100%">\n\n                    <thead>\n\n                        <tr>\n\n                            <th><label> Full Name </label></th>\n\n                            <th><label> Martial </label></th>\n\n                            <th><label> Address </label></th>\n\n                            <th><label> Birthday </label></th>\n\n                            <th><label> Contact # </label></th>\n\n                            <th><label> Year Stay </label></th>\n\n                            <th>  </th>\n\n                        </tr>\n\n                    </thead>\n\n                    <tbody>\n\n                        <tr *ngFor="let client of allData;let i=index; let last=last">\n\n                          <td><label class="text" style="font-size: 0.5em; color: black;"> {{ client.FirstName+" "+client.LastName }} </label></td>\n\n                          <td><label class="text" style="font-size: 0.5em; color: black;"> {{ client.MaritalStatus }} </label></td>\n\n                          <td><label class="text" style="font-size: 0.5em; color: black;"> {{ client.HomeAddress1 }} </label></td>\n\n                          <td><label class="text" style="font-size: 0.5em; color: black;"> {{ client.BirthDate }} </label></td>\n\n                          <td><label class="text" style="font-size: 0.5em; color: black;"> {{ client.HomeAddressContact }} </label></td>\n\n                          <td><label class="text" style="font-size: 0.5em; color: black;"> {{ client.YearsStayed }}</label> </td>\n\n                          <td><label class="text" style="font-size: 0.5em; color: black;"> buttons </label></td>\n\n                          {{last ? ev(i) : \'\'}}\n\n                        </tr>\n\n                        \n\n                    </tbody>\n\n                </table>\n\n              </div>\n\n            </div>\n\n        </div>\n\n    </div>\n\n  </main>\n\n    <!-- end of content -->\n\n   \n\n<page-footer></page-footer>\n\n\n\n\n\n  <!-- modal -->\n\n  \n\n  <!-- end of modal -->\n\n</ion-content>\n\n'/*ion-inline-end:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\client\client.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* ModalController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* ModalController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_5__providers_client_client__["a" /* ClientProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__providers_client_client__["a" /* ClientProvider */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */]) === "function" && _e || Object])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ModalController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ModalController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_5__providers_client_client__["a" /* ClientProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__providers_client_client__["a" /* ClientProvider */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */]) === "function" && _f || Object])
     ], ClientPage);
     return ClientPage;
-    var _a, _b, _c, _d, _e;
+    var _a, _b, _c, _d, _e, _f;
 }());
 
 //# sourceMappingURL=client.js.map
@@ -298,12 +312,11 @@ var ModalsPage = (function () {
     };
     ModalsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-modals',template:/*ion-inline-start:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\modals\modals.html"*/'<!--\n  Generated template for the ModalsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>ADD CLIENT <button style="position: right;float: right;" ion-button [small]="true" [round]="isRound" (click)="closeModal()"><i class="material-icons">clear</i></button></ion-title>\n    \n  </ion-navbar>\n  \n</ion-header>\n\n\n<ion-content padding>\n    \n\n</ion-content>\n\n\n<ion-footer>\n    <ion-toolbar>\n      <ion-title>Footer</ion-title>\n    </ion-toolbar>\n  </ion-footer>'/*ion-inline-end:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\modals\modals.html"*/,
+            selector: 'page-modals',template:/*ion-inline-start:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\modals\modals.html"*/'<!--\n  Generated template for the ModalsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n<ion-header>\n  <ion-navbar color="primary">\n    <ion-title>ADD CLIENT\n      <!--\n      <button style="position: right;float: right;" ion-button [small]="true" [round]="isRound" (click)="closeModal()">\n        <i class="material-icons">clear</i>\n      </button>\n    -->  \n    </ion-title>\n    <ion-buttons end>\n        <button ion-button color="danger" (click)="closeModal()"> <i class="material-icons">clear</i></button>\n      </ion-buttons>\n    \n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n    \n</ion-content>\n\n\n<ion-footer>\n    <ion-toolbar>\n         <ion-buttons end>\n            <button ion-button color="secondary" block> Create </button>\n          </ion-buttons>\n      <!--\n      <ion-title>Footer</ion-title>\n      -->\n    </ion-toolbar>\n  </ion-footer>'/*ion-inline-end:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\modals\modals.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ViewController */]])
     ], ModalsPage);
     return ModalsPage;
-    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=modals.js.map
@@ -417,7 +430,7 @@ var LoanPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-loan',template:/*ion-inline-start:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\loan\loan.html"*/'<ion-header>\n    <ion-navbar>\n      <button ion-button menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n      <ion-title>LOAN</ion-title>\n    </ion-navbar>\n  </ion-header>\n  \n  \n  <ion-content>\n    <!-- content -->\n    <main>\n      <div class="container">\n          <div class="row">\n              <div class="col s12 m5">\n  \n              </div>\n          </div>\n      </div>\n    </main>\n      <!-- end of content -->\n     \n  <page-footer></page-footer>\n  \n  </ion-content>\n  '/*ion-inline-end:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\loan\loan.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
     ], LoanPage);
     return LoanPage;
 }());
@@ -462,7 +475,7 @@ var PaymentPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-payment',template:/*ion-inline-start:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\payment\payment.html"*/'<ion-header>\n    <ion-navbar>\n      <button ion-button menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n      <ion-title>PAYMENT</ion-title>\n    </ion-navbar>\n  </ion-header>\n  \n  \n  <ion-content>\n    <!-- content -->\n    <main>\n      <div class="container">\n          <div class="row">\n              <div class="col s12 m5">\n  \n              </div>\n          </div>\n      </div>\n    </main>\n      <!-- end of content -->\n     \n  <page-footer></page-footer>\n  \n  </ion-content>\n  '/*ion-inline-end:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\payment\payment.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
     ], PaymentPage);
     return PaymentPage;
 }());
@@ -591,7 +604,7 @@ var HeaderPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-header',template:/*ion-inline-start:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\template\header.html"*/'\n\n<!--\n\n<header>\n\n\n\n    <nav class="top-nav" style="background-color: #3c8dbc;">\n\n      <div class="container">\n\n            <a data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>\n\n            <div class="nav-wrapper">\n\n                    <a class="page-title">Barilla</a>\n\n                </div>\n\n              </div>\n\n    </nav>\n\n     <ul id="slide-out" class="side-nav" style="background-color: c0c0c0;">\n\n         <li><a class="waves-effect">Dasboard</a></li>\n\n         <li><a class="waves-effect">Schedules</a></li>\n\n         <li><a class="waves-effect">Loan Accounts</a></li>\n\n    </ul>\n\n          \n\n    \n\n  </header>\n\n\n\n-->'/*ion-inline-end:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\template\header.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
     ], HeaderPage);
     return HeaderPage;
 }());
@@ -636,7 +649,7 @@ var FooterPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-footer',template:/*ion-inline-start:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\template\footer.html"*/'<footer class="page-footer" style="bottom:0 ;width: 100%;position: fixed;padding-top: 0px;background: linear-gradient(-180deg, silver, silver);">\n\n    <div class="footer-copyright">\n\n      <div class="container" style="color: black;">\n\n      © 2017, All rights reserved.\n\n      <a class="black-text text-lighten-4 right" href="http://silverorbit.com">SilverOrbit</a>\n\n      </div>\n\n    </div>\n\n  </footer>'/*ion-inline-end:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\template\footer.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
     ], FooterPage);
     return FooterPage;
 }());
@@ -681,7 +694,7 @@ var SidemenuPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-sidemenu',template:/*ion-inline-start:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\template\sidemenu.html"*/'<ion-header>\n\n        <ion-navbar>\n\n          <button ion-button menuToggle>\n\n            <ion-icon name="menu"></ion-icon>\n\n          </button>\n\n          <ion-title>BARILLA</ion-title>\n\n        </ion-navbar>\n\n      </ion-header>'/*ion-inline-end:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\template\sidemenu.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
     ], SidemenuPage);
     return SidemenuPage;
 }());
@@ -915,13 +928,13 @@ var MyApp = (function () {
         this.nav.setRoot(page.component);
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Nav */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Nav */])
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Nav */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Nav */])
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\xampp\htdocs\microFinance\mf_officers\src\app\app.html"*/'<ion-menu [content]="content">\n\n        <ion-header>\n\n          <ion-toolbar>\n\n            <ion-title> Menu </ion-title>\n\n          </ion-toolbar>\n\n        </ion-header>\n\n      \n\n        <ion-content class="" style="background-color: c0c0c0;">\n\n                <!--\n\n                <ion-list>\n\n                        <a class="waves-effect">Dasboard</a>\n\n                 </ion-list>\n\n                 <ion-list>\n\n                        <a class="waves-effect">Schedules</a>\n\n                 </ion-list>\n\n                 <ion-list>\n\n                        <a class="waves-effect">Loan Accounts</a>\n\n                 </ion-list>\n\n                -->\n\n        \n\n          <ion-list class="animat">\n\n            <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)"> <i class="material-icons">{{p.icon}}</i>\n\n              {{p.title}}\n\n            </button>\n\n          </ion-list>\n\n        \n\n        </ion-content>\n\n      \n\n      </ion-menu>\n\n      \n\n      <!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n\n      <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n\n     \n\n      <!--\n\n      <header>\n\n        <div class="container"><a href="#" data-target="nav-mobile" class="top-nav sidenav-trigger waves-effect waves-light circle hide-on-large-only"><i class="material-icons">menu</i></a></div>\n\n        <ul id="nav-mobile" class="sidenav sidenav-fixed" style="overflow: auto; transform: translateX(-105%);">\n\n          <li class="logo"><a id="logo-container" href="/" class="brand-logo">\n\n              <object id="front-page-logo" type="image/svg+xml" data="res/materialize.svg" __idm_frm__="1635">Your browser does not support SVG</object></a></li>\n\n          <li class="search">\n\n            <div class="search-wrapper">\n\n              <input id="search" placeholder="Search"><i class="material-icons">search</i>\n\n              <div class="search-results"></div>\n\n            </div>\n\n          </li>\n\n          <li class="bold"><a href="about.html" class="waves-effect waves-teal">About</a></li>\n\n          <li class="bold"><a href="getting-started.html" class="waves-effect waves-teal">Getting Started</a></li>\n\n          \n\n          <li class="bold"><a href="mobile.html" class="waves-effect waves-teal">Mobile</a></li>\n\n          <li class="bold"><a href="showcase.html" class="waves-effect waves-teal">Showcase</a></li>\n\n          <li class="bold"><a href="themes.html" class="waves-effect waves-teal">Themes</a></li>\n\n        </ul>\n\n      </header>\n\n    -->'/*ion-inline-end:"C:\xampp\htdocs\microFinance\mf_officers\src\app\app.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */], __WEBPACK_IMPORTED_MODULE_9__ionic_storage__["b" /* Storage */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */], __WEBPACK_IMPORTED_MODULE_9__ionic_storage__["b" /* Storage */]])
     ], MyApp);
     return MyApp;
 }());
@@ -1053,9 +1066,9 @@ var LoginPage = (function () {
             selector: 'page-login',template:/*ion-inline-start:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\login\login.html"*/'<!--\n\n  Generated template for the LoginPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<!--\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>login</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n-->\n\n\n\n<ion-content padding>\n\n    <div class="wrapper">\n\n	<div class="container">\n\n		<h1>BARILLA</h1>\n\n    <!-- submitting  (ngSubmit)="logForm()" (click)="onSignIn()"-->\n\n\n\n    <form class="form" [formGroup]="logForms" (ngSubmit)="logForm(logForms.value)">\n\n      <!--\n\n        <span class="help-block form-error text-danger small" \n\n        *ngIf="errorMessage !== null || errorMessage !== \'\' ">  <b style="color:red;">Username or Password is incorrect!</b> <br>  <br></span>\n\n      -->\n\n        <input type="text" [(ngModel)]="logForms.username" name="username" formControlName="username" [formControl]="logForms.controls[\'username\']" placeholder="Username">\n\n       \n\n        <span class="help-block form-error text-danger small" \n\n        *ngIf="logForms.controls[\'username\'].errors?.required &&\n\n        logForms.controls[\'username\'].touched">  <b style="color:red;">Username is required</b> </span>\n\n\n\n\n\n      \n\n        <input type="password" [(ngModel)]="logForms.password" name="password" formControlName="password" [formControl]="logForms.controls[\'password\']" placeholder="Password">\n\n       \n\n        <span class="help-block form-error text-danger small" \n\n        *ngIf="logForms.controls[\'password\'].errors?.required &&\n\n        logForms.controls[\'password\'].touched">  <b style="color:red;">Password is required</b> <br></span>\n\n\n\n      \n\n      <button ion-button type="submit" id="login-button" >Login</button>\n\n     \n\n    </form>\n\n\n\n  </div>\n\n  <ul class="bg-bubbles">\n\n		<li></li>\n\n		<li></li>\n\n		<li></li>\n\n		<li></li>\n\n		<li></li>\n\n		<li></li>\n\n		<li></li>\n\n		<li></li>\n\n		<li></li>\n\n    <li></li>\n\n    <li></li>\n\n	</ul>\n\n</div>\n\n\n\n</ion-content>\n\n\n\n\n\n'/*ion-inline-end:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\login\login.html"*/,
             styleUrls: ['/pages/login/login.scss'],
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */],
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Platform */],
             __WEBPACK_IMPORTED_MODULE_4__ionic_native_screen_orientation__["a" /* ScreenOrientation */],
             __WEBPACK_IMPORTED_MODULE_3__providers_auth_auth__["a" /* AuthProvider */],
             __WEBPACK_IMPORTED_MODULE_5__ionic_storage__["b" /* Storage */],
@@ -1111,7 +1124,7 @@ var TemplatePage = (function () {
             selector: 'page-template',template:/*ion-inline-start:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\template\template.html"*/'<!--\n\n  Generated template for the TemplatePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n\n\n<!--\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>template</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n \n\n</ion-content>\n\n-->'/*ion-inline-end:"C:\xampp\htdocs\microFinance\mf_officers\src\pages\template\template.html"*/,
             entryComponents: [__WEBPACK_IMPORTED_MODULE_3__pages_template_footer__["a" /* FooterPage */], __WEBPACK_IMPORTED_MODULE_2__pages_template_header__["a" /* HeaderPage */], __WEBPACK_IMPORTED_MODULE_4__pages_template_sidemenu__["a" /* SidemenuPage */]],
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
     ], TemplatePage);
     return TemplatePage;
 }());

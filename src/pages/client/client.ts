@@ -11,6 +11,7 @@ import { ClientProvider } from '../../providers/client/client';
 import 'rxjs/add/operator/map';
 import {Observable} from 'rxjs/Rx';
 import 'rxjs/rx';
+import { LoadingController } from 'ionic-angular';
 /**
  * Generated class for the ClientPage page.
  *
@@ -35,13 +36,26 @@ export class ClientPage {
      public navParams: NavParams,
      public modalCtrl: ModalController,
      private client: ClientProvider,
-     private storage: Storage) {
+     private storage: Storage,
+     public loading: LoadingController) {
 
         
     this.loadAllclients();
   }
 
   ionViewDidLoad() {
+    /*
+    let loader = this.loading.create({
+      content: 'Getting latest entries...',
+    });
+    loader.present().then(() => {
+      this.someService.getLatestEntries()
+        .subscribe(res => {
+          this.latestEntries = res;
+        });
+      loader.dismiss();
+    });
+    */
     //console.log('ionViewDidLoad ClientPage');
   }
   loadDatatable(){
