@@ -16,7 +16,7 @@ import { Storage } from '@ionic/storage';
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
-  rootPage:any = HomePage;
+  rootPage:any = null;
   
   pages: Array<{title: string, icon: string, component: any}>;
   constructor(private platform: Platform,private statusBar: StatusBar,private splashScreen: SplashScreen,private storage: Storage) {
@@ -27,7 +27,7 @@ export class MyApp {
       }else{
           //this.rootPage = LoginPage; //original
       }
-    
+      this.rootPage = HomePage; //original
      });
 
     this.pages = [

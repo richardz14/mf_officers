@@ -23,17 +23,189 @@
 
 
 <ion-content padding>
-    
+    <div class="row">
+        <form class="col s12 form" [formGroup]="addClient" (ngSubmit)="addingClient(addClient.value)">
+           Personal Details:
+           <div class="row">
+             <div class="col s8">
+              <ion-item>
+                  <ion-label>Group</ion-label>
+                  <ion-select  [(ngModel)]="addClient.group" name="group" formControlName="group" [formControl]="addClient.controls['group']" >
+                    <ion-option value="1">option 1</ion-option>
+                    <ion-option value="2">option 2</ion-option>
+                  </ion-select>
+                </ion-item>           
+                  <span class="help-block form-error text-danger small" 
+                  *ngIf="addClient.controls['group'].errors?.required &&
+                  addClient.controls['group'].touched">  <b style="color:red;font-size: .5em;">Group is required</b> </span>
+          
+              </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s12">
+                  <input id="client_code" type="number" class="validate">
+                  <label for="client_code">Client Code</label>
+                </div>
+              </div>
+
+          <div class="row">
+            <div class="input-field col s4">
+              <input id="first_name" type="text" class="validate">
+              <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field col s4">
+              <input id="last_name" type="text" class="validate">
+              <label for="last_name">Last Name</label>
+            </div>
+            <div class="input-field col s4">
+                <input id="middle_name" type="text" class="validate">
+                <label for="middle_name">Middle Name</label>
+              </div>
+          </div>
+
+          <div class="row">
+              <div class="input-field col s12">
+                <input id="maiden_name" type="text" class="validate">
+                <label for="maiden_name">Maiden Name</label>
+              </div>
+            </div>
+
+            <div class="row">
+                <div class="col s8">
+                 <ion-item>
+                     <ion-label>Gender</ion-label>
+                     <ion-select>
+                       <ion-option value="m">Male</ion-option>
+                       <ion-option value="f">Female</ion-option>
+                     </ion-select>
+                   </ion-item>
+                 </div>
+               </div>
+
+               <div class="row">
+                  <div class="input-field col s12">
+                      <input id="date_birth" type="date" class="datepicker">
+                  </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                      <input id="place_birth" type="text" class="validate">
+                      <label for="place_birth">Place of birth</label>
+                    </div>
+                  </div>
+
+         Contact Information:
+         <div class="row">
+            <div class="input-field col s12">
+              <input id="home_add_1" type="text" class="validate">
+              <label for="home_add_1">Home Address 1</label>
+            </div>
+          </div>
+
+          <div class="row">
+              <div class="input-field col s12">
+                <input id="home_add_2" type="text" class="validate">
+                <label for="home_add_2">Home Address 2</label>
+              </div>
+            </div>
+          
+            <div class="row">
+                <div class="input-field col s12">
+                  <input id="home_contact" type="number" class="validate">
+                  <label for="home_contact">Home Contact #</label>
+                </div>
+              </div>
+
+          Other Information:
+          <div class="row">
+              <div class="col s8">
+               <ion-item>
+                   <ion-label>Martial Status</ion-label>
+                   <ion-select>
+                     <ion-option value="s">Single</ion-option>
+                     <ion-option value="m">Married</ion-option>
+                     <ion-option value="d">Divorced</ion-option>
+                   </ion-select>
+                 </ion-item>
+               </div>
+             </div>
+            
+             <div class="row">
+                <div class="input-field col s12">
+                  <input id="year_stay" type="number" class="validate">
+                  <label for="year_stay">Year Stay</label>
+                </div>
+              </div>
+            
+              <div class="row">
+                  <div class="col s8">
+                   <ion-item>
+                       <ion-label>Client Classification</ion-label>
+                       <ion-select>
+                         <ion-option value="farmer">Farmer</ion-option>
+                         <ion-option value="business">Business Man</ion-option>
+                         <ion-option value="vendor">Vendor</ion-option>
+                         <ion-option value="ip">IP</ion-option>
+                         <ion-option value="pwd">PWD</ion-option>
+                         <ion-option value="urban_poor">Urban Poor (UP)</ion-option>
+                       </ion-select>
+                     </ion-item>
+                   </div>
+                 </div>
+          
+                 User Account:
+                 <div class="row">
+                    <div class="input-field col s12">
+                      <input id="username" type="text" class="validate">
+                      <label for="username">Username</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                      <div class="input-field col s12">
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                      </div>
+                    </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="password1" type="password" class="validate">
+              <label for="password1">Password</label>
+            </div>
+          </div>
+          <div class="row">
+              <div class="input-field col s12">
+                <input id="password2" type="password" class="validate">
+                <label for="password2">Confirm Password</label>
+              </div>
+            </div>
+         
+
+            <div class="row">
+              <div class="col s12">
+                <ion-buttons end>
+                  <button class="btn waves-effect waves-light" type="submit" name="action">CREATE
+                      <i class="material-icons right">send</i>
+                    </button>
+                </ion-buttons>
+              </div>
+            </div>
+
+        </form>
+      </div>
 </ion-content>
 
-
+<!--
 <ion-footer>
-    <ion-toolbar>
-         <ion-buttons end>
-            <button ion-button color="secondary" block> Create </button>
-          </ion-buttons>
-      <!--
-      <ion-title>Footer</ion-title>
-      -->
+  <ion-toolbar>
+       <ion-buttons end>
+          <button class="btn waves-effect waves-light" type="submit" name="action">CREATE
+              <i class="material-icons right">send</i>
+            </button>
+        </ion-buttons>
+
     </ion-toolbar>
-  </ion-footer>
+    </ion-footer>
+
+  -->
